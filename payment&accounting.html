@@ -39,34 +39,37 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+        .submit-link {
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
 
-<form action="#" method="post">
     <h2>Payment Details</h2>
     <label for="invoice_number">Invoice Number:</label>
-    <input type="text" id="invoice_number" name="invoice_number" required>
+    <input type="text" id="invoice_number" name="invoice_number">
 
     <label for="amount">Amount:</label>
-    <input type="number" id="amount" name="amount" required>
+    <input type="number" id="amount" name="amount">
 
     <label for="payment_date">Payment Date:</label>
-    <input type="date" id="payment_date" name="payment_date" required>
+    <input type="date" id="payment_date" name="payment_date">
 
     <h2>Accounting Details</h2>
     <label for="account_number">Account Number:</label>
-    <input type="text" id="account_number" name="account_number" required>
+    <input type="text" id="account_number" name="account_number">
 
     <label for="transaction_type">Transaction Type:</label>
-    <select id="transaction_type" name="transaction_type" required>
+    <select id="transaction_type" name="transaction_type">
         <option value="">Select Transaction Type</option>
         <option value="Income">Income</option>
         <option value="Expense">Expense</option>
         <option value="Transfer">Transfer</option>
     </select>
 
-    <input type="submit" value="Submit">
+    <a href="logistics.html" class="submit-link"><input type="submit" value="Submit"></a>
 </form>
 
 </body>
